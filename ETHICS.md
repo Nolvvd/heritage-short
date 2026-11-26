@@ -5,7 +5,7 @@
 | Person | Appears? | Voiced? | Consent | Recorded |
 |---|---|---|---|---|
 | Me (Nole Mohammed), author and the narrator "I" | No (fictional characters only) | No: a stock Gemini TTS voice ("Charon"), not a clone of my voice | I wrote and approve every narration line | 2026-11-26 |
-| My family (the tradition belongs to them) | No | No | My parents agreed on 2026-11-26 that our Eid genfo tradition may be shared in a public film (their words, translated: "it would be great to share"). They are not depicted or voiced. Method: _[in person / call / message]_ | 2026-11-26 |
+| My family (the tradition belongs to them) | No | No | My parents agreed on 2026-11-26 that our Eid genfo tradition may be shared in a public film (their words, translated: "it would be great to share"). They are not depicted or voiced. Method: in person (I live with them) | 2026-11-26 |
 
 **No real person's face, likeness or voice is generated.** Every person on screen, including the children, is a fictional, non-identifiable AI character described only by clothing. Faces are kept turned away or out of focus. No photographs of real relatives were sent to any model. No voice cloning was used.
 

@@ -47,3 +47,35 @@ Each entry: hypothesis → change (one thing at a time) → result → decision.
 
 - **Result:** only candidate 0 follows the arc: its swell lands on the bowl, its peak on the stadium, and it fades under the last line. Candidate 2 peaks exactly on the dua, the moment that should be quietest. None has a real dip for the dua; ducking (threshold 0.02, ratio 6) lowers the score under every line anyway.
 - **Decision:** `music.chosen = 0`. Lesson: when the ear can't separate candidates, measuring them against the edit's timeline can. That's the "spotting session" done with numbers.
+
+## E07: Group-level vs per-person ethnicity in the prompt (2026-11-26)
+- **Hypothesis:** "a fictional Ethiopian (Habesha) Muslim family … all with brown skin and Habesha features" (one group-level phrase) is enough to make all five people look Ethiopian.
+- **Result (seed 1102):** partial. The father and boy looked Ethiopian; the mother, grandmother and girl still looked lighter-skinned and Middle Eastern (FAILURES F08).
+- **Change:** one variable: "Habesha … brown skin" attached to **each** numbered person; same seed.
+- **Result:** four of five now read as Ethiopian; the mother is closer but still the least convincing. In the final film (s06), the whole family reads as Ethiopian.
+- **Lesson:** a group adjective is applied unevenly; attributes that matter belong on each subject.
+
+## E08: Getting the family onto the floor (s06) (2026-11-26)
+- **Hypothesis:** "the whole family sitting together on the woven floor mat in a circle around the single bowl" makes the floor-seated circle my testers know.
+- **Result (first run):** the family sat on a low bench along the wall, with the bowl on the floor in front. It looked like a formal sitting room, not our Eid floor.
+- **Change:** "sitting **cross-legged directly on** the woven floor mat in a **close** circle … **slightly high angle looking down** … faces turned toward the bowl and each other rather than the camera". Same seed (1206).
+- **Result:** the family sits on the floor around the single bowl, viewed from slightly above. That's the signature shot as intended.
+- **Lesson:** the model defaulted to furniture; the posture ("cross-legged directly on") and the camera angle had to be stated.
+
+## E09: Does one loudness pass hit the platform target? (2026-11-26)
+- **Hypothesis:** a single `loudnorm` pass (I = −14 LUFS, TP = −1.5 dB) after ducking lands within ±0.5 LU of −14 LUFS without a second analysis pass.
+- **Measurement (EBU R128 over the whole export):** draft with placeholder drone: −14.0 LUFS, peak −1.0 dBFS. Final with the ACE-Step score: **−14.3 LUFS, peak −1.4 dBFS**, in both 9:16 and 16:9.
+- **Result:** within 0.3 LU of target, with the peak under −1 dB. A two-pass run was not needed for this material.
+
+## E10: Is a fixed seed reproducible on Cloudflare Workers AI? (2026-11-26)
+- **Hypothesis:** the same prompt + the same seed (s01, seed 1201, FLUX.2 klein 4B, 1536²) gives the same image, so anyone can regenerate the film exactly.
+- **Test:** s01 was generated at 02:45 UTC, changed and regenerated for the walkthrough, then reverted to the original prompt and regenerated at 15:44 UTC. I compared the 02:45 file (from git history, commit c2c1fbf) with the 15:44 file.
+- **Result:** **not identical**: different bytes, SSIM 0.83, PSNR 20.7 dB. The same scene and composition, with different details.
+- **Implication:** on this hosted endpoint a seed makes runs *comparable*, not *bit-reproducible*. So the repository commits the generated outputs, and the input-hash cache reuses them, so a clean clone rebuilds the **same** film without new calls; regenerating from scratch gives a *similar* film. README updated to say so.
+
+## E11: What caching saves on a one-shot change (2026-11-26)
+- **Hypothesis:** changing one shot regenerates one model call, not eleven.
+- **Measurement (walkthrough, `runs.jsonl`):** editing s01's keyframe prompt and running `python -m pipeline.run` made **1** new keyframe call (12.9 s) and **0** narration calls, while the other shots were cache hits. Assembly re-rendered only s01's clip and then rebuilt each format in 31–48 s.
+- **Comparison:** without the cache, the same run would make 11 keyframe calls (~2 min, plus 11 images from the daily allowance) and 11 TTS calls (~4 min at the 20 s spacing the rate limit forces). Across the project, 44 keyframe requests were served from cache.
+- **Lesson:** the cache isn't only speed: on a rate-limited free tier it decides whether iterating is possible at all.
+

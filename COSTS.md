@@ -24,7 +24,7 @@ Measured from `runs.jsonl` (89 lines on 2026-11-26, 00:25–11:43 UTC, before th
 | Kaggle music session (successful) | 1,057 s total: `uv sync` 95 s, model load 45 s, weights download + generation the rest; plus two failed attempts (F11, F12) |
 | TTS rate-limit waiting | most of the narration wall time: 20 s spacing + 65 s cool-downs |
 | One full keyframe pass (11 shots) | about 2 min |
-| Full-resolution assembly, both formats | _(fill after final render)_ |
+| Full-resolution assembly, both formats | 31–48 s per format on my laptop (10 renders logged); draft 9:16 15 s |
 
 ## Free-tier limits actually met
 

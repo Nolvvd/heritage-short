@@ -16,7 +16,7 @@ cp .env.example .env                                  # add GEMINI_API_KEY, CLOU
 python -m pipeline.run                                # the whole film (or: make film)
 ```
 
-`python -m pipeline.run --draft` renders a half-resolution preview. With the committed `outputs/`, every stage is a cache hit and the film rebuilds in about a minute without any API calls.
+`python -m pipeline.run --draft` renders a half-resolution preview. With the committed `outputs/`, every stage is a cache hit and the film rebuilds in about a minute without any API calls. Deleting `outputs/` regenerates everything from the same prompts and seeds; on the hosted image API this gives a *similar* but not bit-identical film (EXPERIMENTS E10).
 
 **Music** is generated on a Kaggle GPU (`kaggle/music_acestep.ipynb`, ACE-Step 1.5) and imported with `python -m pipeline.import_music music_outputs.zip`; the chosen candidate is set in `storyboard.json → music.chosen`.
 

@@ -19,7 +19,7 @@
   },
   "s01": {
     "hash": "af18cefa88725145",
-    "path": "outputs\\keyframes\\shots\\s01.jpg",
+    "path": "outputs/keyframes/shots/s01.jpg",
     "model": "@cf/black-forest-labs/flux-2-klein-4b",
     "seed": 1201
   },

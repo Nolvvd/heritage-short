@@ -2,6 +2,8 @@
 
 An 85-second Amharic short film about my family's Eid al-Fitr mornings: waking each other before dawn, sitting on the floor around one bowl of genfo, racing for the butter in the middle, making dua, and walking to the stadium for prayer. It is generated end to end by a small, reproducible pipeline from one file, `storyboard.json`.
 
+**Watch:** [vertical 9:16](https://youtube.com/shorts/q2Oz-x5BJ0c) · [horizontal 16:9](https://youtu.be/lCcljUvVNNM) (unlisted, AI-labelled) · [pipeline walkthrough](https://youtu.be/1GrMu0Rhi8w) · [post on X](https://x.com/VvdNole/status/2125986257159205304)
+
 **Output:** `outputs/final/film_9x16.mp4` (vertical) and `outputs/final/film_16x9.mp4` (horizontal), each with Amharic narration, burned-in English subtitles, an original score ducked under the voice, and an AI-disclosure end card.
 
 ## Run it

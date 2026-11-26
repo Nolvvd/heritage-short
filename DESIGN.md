@@ -89,10 +89,10 @@ Shared answers across the group: the story is clear ("the Eid morning we used to
 
 ## User test 2: near-final cut
 
-| # | Who | What they said | Action |
-|---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+Run on 2026-11-26 with the same three people (elder brother, elder sister, younger brother), watching the full 1080×1920 film with the chosen ACE-Step score.
 
-**What changed because of test 2:** _(fill in)_
+| # | Who | What they said |
+|---|---|---|
+| 1–3 | Elder brother, elder sister, younger brother | They loved it, and named the two things changed since test 1: the race for the butter (their own request) and the background score |
+
+**What changed because of test 2:** nothing further. The test confirmed that the test 1 change (s07's butter race) landed and that the score (candidate 0, E06) supports the narration rather than competing with it. The cut was locked.

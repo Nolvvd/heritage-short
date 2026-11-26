@@ -1,0 +1,68 @@
+{
+  "s01": {
+    "hash": "cf3f11d189b335bd",
+    "path": "outputs\\narration\\s01.wav",
+    "duration_s": 8.77,
+    "words": 11
+  },
+  "s02": {
+    "hash": "d320e506768630a4",
+    "path": "outputs\\narration\\s02.wav",
+    "duration_s": 10.15,
+    "words": 6
+  },
+  "s03": {
+    "hash": "93f0f4d45145dd5f",
+    "path": "outputs\\narration\\s03.wav",
+    "duration_s": 16.68,
+    "words": 7
+  },
+  "s04": {
+    "hash": "257b658684a6cd79",
+    "path": "outputs\\narration\\s04.wav",
+    "duration_s": 18.94,
+    "words": 8
+  },
+  "s05": {
+    "hash": "3bbfae4ad5477e60",
+    "path": "outputs\\narration\\s05.wav",
+    "duration_s": 18.54,
+    "words": 10
+  },
+  "s06": {
+    "hash": "5f8707da93d0d4de",
+    "path": "outputs\\narration\\s06.wav",
+    "duration_s": 6.14,
+    "words": 6
+  },
+  "s07": {
+    "hash": "19f26fc480f99fae",
+    "path": "outputs\\narration\\s07.wav",
+    "duration_s": 16.19,
+    "words": 7
+  },
+  "s08": {
+    "hash": "07ab29164835b1cb",
+    "path": "outputs\\narration\\s08.wav",
+    "duration_s": 8.89,
+    "words": 6
+  },
+  "s09": {
+    "hash": "290e9ddb57425470",
+    "path": "outputs\\narration\\s09.wav",
+    "duration_s": 5.69,
+    "words": 10
+  },
+  "s10": {
+    "hash": "7d50f75d4e4927e2",
+    "path": "outputs\\narration\\s10.wav",
+    "duration_s": 18.42,
+    "words": 14
+  },
+  "s11": {
+    "hash": "7b42e5175181b4cb",
+    "path": "outputs\\narration\\s11.wav",
+    "duration_s": 5.79,
+    "words": 11
+  }
+}

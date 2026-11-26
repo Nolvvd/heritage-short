@@ -1,0 +1,11 @@
+# secrets
+.env
+*.key
+# local environments and caches
+__pycache__/
+.venv/
+outputs/**/*.tmp
+# large or regenerable outputs (rebuilt by `python -m pipeline.run` from the cached inputs)
+music_outputs*.zip
+outputs/assemble/
+outputs/final/*.mp4

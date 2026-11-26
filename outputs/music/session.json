@@ -1,0 +1,7 @@
+{
+  "install_s": 95,
+  "models_load_s": 45,
+  "gpu": "Tesla T4",
+  "peak_gpu_mem_gb": 7.83,
+  "total_session_s": 1057
+}

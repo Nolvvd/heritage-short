@@ -1,0 +1,389 @@
+{
+  "meta": {
+    "title_am": "በአንድ ሳህን ዙሪያ",
+    "title_en": "Around One Bowl",
+    "logline": "A young man remembers the Eid al-Fitr mornings of his childhood, when his whole family woke before dawn and gathered on the floor around one bowl of genfo before walking to the stadium for prayer.",
+    "language": "am-ET",
+    "fps": 24,
+    "target_duration_s": 85,
+    "formats": [
+      "9:16",
+      "16:9"
+    ],
+    "default_seed": 1000
+  },
+  "style": {
+    "style_block": "warm nostalgic cinematic film still, soft 35mm film grain, deep midnight blue night tones and warm amber tungsten indoor light, gentle shallow depth of field, a modest family home in Addis Ababa, Ethiopia, quiet and intimate mood, subject centred in frame, natural candid moment, photorealistic",
+    "negative": "no text, no letters, no writing, no signs, no logos, no watermark, no multiple bowls, no separate plates, no posing, no looking at camera, no sunrise sky, no extra fingers, no distorted hands",
+    "voice": {
+      "model": "gemini-3.8-flash-lite-tts",
+      "voice_name": "Charon",
+      "style_instruction": "Speak Amharic as a young man remembering his childhood: calm, warm, unhurried and slightly wistful, with soft natural pauses between sentences.",
+      "fallback_models": [
+        "gemini-3.8-flash-tts"
+      ]
+    }
+  },
+  "references": [
+    {
+      "id": "bowl",
+      "kind": "object",
+      "description": "one large wide round cream-white enamel bowl with a thin dark blue rim, holding a smooth glossy ring of thick pale beige barley genfo shaped like a wide doughnut, its surface perfectly smooth and shiny, with a deep hollow in the centre filled with a dark red pool of melted spiced butter and berbere",
+      "prompt": "reference photo of one large wide round cream-white enamel bowl with a thin dark blue rim, holding a smooth glossy ring of thick pale beige barley genfo shaped like a wide doughnut, its surface perfectly smooth and shiny, with a deep hollow in the centre filled with a dark red pool of melted spiced butter and berbere, on a woven floor mat, seen from a 45 degree angle, nothing else in the bowl",
+      "seed": 1101
+    },
+    {
+      "id": "family",
+      "kind": "character",
+      "description": "a fictional Ethiopian (Habesha) Muslim family of exactly five, every one of them with brown skin and Habesha features: a Habesha father in a white jalabiya and white knitted kufi cap, a young Habesha mother with brown skin in a cream headscarf and long pale green dress, an elderly Habesha grandmother with dark brown skin in a white Ethiopian netela shawl, one Habesha boy of about seven in a small white jalabiya, and one Habesha girl of about five with brown skin in a pink headscarf and dress",
+      "prompt": "costume reference sheet of a fictional Ethiopian (Habesha) Muslim family from Addis Ababa, exactly five people standing in a row, full body, every person Ethiopian with brown skin and Habesha features: 1 a Habesha father in a white jalabiya and white knitted kufi cap, 2 a young Habesha mother in her thirties with brown skin, in a cream headscarf and long pale green dress, 3 an elderly Habesha grandmother with dark brown skin, in a white Ethiopian netela shawl over a white headscarf, 4 one Habesha boy of about seven in a small white jalabiya, 5 one Habesha girl of about five with brown skin in a pink headscarf and pink dress; only one boy and one girl, plain warm background",
+      "seed": 1102
+    },
+    {
+      "id": "home",
+      "kind": "place",
+      "description": "a modest Addis Ababa living room with a red-and-cream woven mat on the floor, low cushions along the walls, a single warm tungsten bulb, a wooden door and a small window showing dark blue night",
+      "prompt": "empty modest Addis Ababa living room at night, red-and-cream woven mat on the floor, low cushions along the walls, a single warm tungsten bulb, a wooden door and a small window showing dark blue night, wide angle",
+      "seed": 1103
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "beat": "Before dawn: the house is still asleep",
+      "reason": "Establishes the time (5 AM, still dark) and the place before any people appear, so the night becomes part of the memory.",
+      "shot_size": "extreme_wide",
+      "min_duration_s": 7,
+      "keyframe": {
+        "prompt": "a quiet Addis Ababa neighbourhood street before dawn, small houses with corrugated roofs, one window glowing warm amber, deep blue night sky, empty street",
+        "refs": [],
+        "seed": 1201
+      },
+      "motion": {
+        "mode": "kenburns",
+        "kenburns": {
+          "zoom_from": 1.0,
+          "zoom_to": 1.12,
+          "pan": "none"
+        }
+      },
+      "narration": {
+        "text": "ረመዳን አልቋል። ከሌሊቱ አስራ አንድ ሰዓት ነው፤ ውጪው ገና ጨለማ ነው።",
+        "subtitle_en": "Ramadan is over. It is five in the morning,\nand outside it is still dark."
+      }
+    },
+    {
+      "id": "s02",
+      "beat": "We wake each other",
+      "reason": "Our ritual starts with people waking one another, not with alarms or phones; a hand on a shoulder carries that without showing a face.",
+      "shot_size": "close_up",
+      "min_duration_s": 7,
+      "keyframe": {
+        "prompt": "close-up of a hand gently touching the shoulder of a sleeping person under a dark wool blanket, dim room lit by light from an open doorway",
+        "refs": [
+          "home"
+        ],
+        "seed": 1202
+      },
+      "motion": {
+        "mode": "wan",
+        "prompt": "the hand gently shakes the shoulder, the sleeper slowly stirs, warm light spills in from the doorway, camera fixed",
+        "seed": 2202
+      },
+      "narration": {
+        "text": "እርስ በርሳችን በቀስታ እንቀሰቅሳለን። ማንም አይቀርም።",
+        "subtitle_en": "We gently wake one another.\nNo one is left behind."
+      }
+    },
+    {
+      "id": "s03",
+      "beat": "The children are already running",
+      "reason": "The children's excitement is the energy of the morning; seen from behind so it feels spontaneous, not posed.",
+      "shot_size": "medium",
+      "min_duration_s": 6,
+      "keyframe": {
+        "prompt": "seen from behind: only the small boy in a white jalabiya and the little girl in a pink headscarf, running away from the camera down a narrow hallway, backs to camera, faces not visible, slight motion blur, warm light from a doorway at the end",
+        "refs": [
+          "home"
+        ],
+        "seed": 1203,
+        "text_refs": [
+          "family"
+        ]
+      },
+      "motion": {
+        "mode": "wan",
+        "prompt": "the two children run away down the hallway, gentle handheld camera follows slightly, soft motion blur",
+        "seed": 2203
+      },
+      "narration": {
+        "text": "ልጆቹ ቀድመው ነቅተዋል፤ በደስታ ቤቱ ውስጥ ይሯሯጣሉ።",
+        "subtitle_en": "The children are already awake,\nrunning through the house with joy."
+      }
+    },
+    {
+      "id": "s04",
+      "beat": "Everyone gets ready",
+      "reason": "Shows the waiting and preparing: the floor mat being laid out is where the bowl will go, so it sets up the next scene.",
+      "shot_size": "medium",
+      "min_duration_s": 7,
+      "keyframe": {
+        "prompt": "seen from behind, a young woman in a cream headscarf and long pale green dress kneeling and unrolling a red-and-cream woven mat on the floor of the living room, her face not visible, cushions along the walls, warm bulb light, dark window",
+        "refs": [
+          "home"
+        ],
+        "seed": 1204,
+        "text_refs": []
+      },
+      "motion": {
+        "mode": "kenburns",
+        "kenburns": {
+          "zoom_from": 1.1,
+          "zoom_to": 1.0,
+          "pan": "left"
+        }
+      },
+      "narration": {
+        "text": "አንዱ ይታጠባል፣ ሌላው ቤቱን ያስተካክላል። ሁሉም እስኪደርስ እንጠብቃለን።",
+        "subtitle_en": "One washes, another tidies the house.\nWe wait until everyone is ready."
+      }
+    },
+    {
+      "id": "s05",
+      "beat": "The genfo arrives",
+      "reason": "Introduces the bowl, the visual heart of the film, in close-up so it is recognisable every time it returns.",
+      "shot_size": "close_up",
+      "min_duration_s": 7,
+      "keyframe": {
+        "prompt": "close-up of hands placing the bowl down onto the woven floor mat, steam rising from the smooth genfo ring, the red butter-berbere pool glistening in its centre",
+        "refs": [
+          "bowl",
+          "home"
+        ],
+        "seed": 1205
+      },
+      "motion": {
+        "mode": "wan",
+        "prompt": "the bowl is set down gently, soft steam rises, camera slowly pushes in",
+        "seed": 2205
+      },
+      "narration": {
+        "text": "ከዚያ ገንፎው ይመጣል፤ በአንድ ትልቅ ሳህን፣ መሃሉ ላይ ቅቤና በርበሬ።",
+        "subtitle_en": "Then the genfo comes, in one big bowl,\nbutter and berbere in the middle."
+      }
+    },
+    {
+      "id": "s06",
+      "beat": "One bowl, one family (wide)",
+      "reason": "The signature image: the whole family on the floor around a single bowl. Wide so the audience sees there is only one bowl.",
+      "shot_size": "wide",
+      "min_duration_s": 6.5,
+      "keyframe": {
+        "prompt": "the whole family of five sitting cross-legged directly on the woven floor mat in a close circle around the single bowl in the centre, slightly high angle looking down, candid, relaxed, faces turned toward the bowl and each other rather than the camera, warm bulb light",
+        "refs": [
+          "family",
+          "bowl",
+          "home"
+        ],
+        "seed": 1206
+      },
+      "motion": {
+        "mode": "kenburns",
+        "kenburns": {
+          "zoom_from": 1.0,
+          "zoom_to": 1.1,
+          "pan": "none"
+        }
+      },
+      "narration": {
+        "text": "ሁላችንም መሬት ላይ በሳህኑ ዙሪያ እንቀመጣለን።",
+        "subtitle_en": "We all sit on the floor around the bowl."
+      }
+    },
+    {
+      "id": "s07",
+      "beat": "Many hands, one bowl, and the race for the butter",
+      "reason": "Hands of every age in the same bowl say 'together'; the race for the butter in the middle is the real, funny family moment testers asked for (user test 1), and a laugh here makes the quiet dua that follows land harder.",
+      "shot_size": "extreme_close",
+      "min_duration_s": 7,
+      "keyframe": {
+        "prompt": "top-down close-up of several hands of different ages, an old hand, adult hands and a small child's hand, all reaching at once toward the red butter-berbere pool in the centre of the smooth genfo ring, a playful race, the child's small hand getting there first, sleeves of white and pale green cloth",
+        "refs": [
+          "bowl",
+          "family"
+        ],
+        "seed": 1207
+      },
+      "motion": {
+        "mode": "kenburns",
+        "kenburns": {
+          "zoom_from": 1.15,
+          "zoom_to": 1.0,
+          "pan": "none"
+        }
+      },
+      "narration": {
+        "text": "ትንሹም ትልቁም ወደ አንዱ ሳህን እጁን ይዘረጋል፤ ሁሉም ግን መሃል ላይ ወዳለው ቅቤ ይሽቀዳደማል።",
+        "subtitle_en": "Young and old reach into one bowl,\nbut we all race for the butter.",
+        "style_instruction": "Warm and playful, with a smile in the voice, as if remembering something that still makes you laugh."
+      }
+    },
+    {
+      "id": "s08",
+      "beat": "The dua",
+      "reason": "The turn from excitement to calm; kept still and respectful, hands raised, no faces, no text.",
+      "shot_size": "medium_close",
+      "min_duration_s": 7,
+      "keyframe": {
+        "prompt": "the family seated on the floor mat around the now half-empty bowl, heads slightly bowed, palms raised together in quiet supplication, seen from the side, soft warm light, calm stillness",
+        "refs": [
+          "family",
+          "bowl",
+          "home"
+        ],
+        "seed": 1208
+      },
+      "motion": {
+        "mode": "kenburns",
+        "kenburns": {
+          "zoom_from": 1.0,
+          "zoom_to": 1.06,
+          "pan": "none"
+        }
+      },
+      "narration": {
+        "text": "ከበላን በኋላ በጸጥታ አብረን ዱዓ እናደርጋለን።",
+        "subtitle_en": "After we eat, we make dua together, quietly.",
+        "style_instruction": "Softer and slower than the rest, almost a whisper of memory."
+      }
+    },
+    {
+      "id": "s09",
+      "beat": "Leaving before dawn",
+      "reason": "The family steps out while it is still dark and joins others; shows our Eid is part of a whole city waking.",
+      "shot_size": "wide",
+      "min_duration_s": 8,
+      "keyframe": {
+        "prompt": "seen from behind: the family walking away from the camera down a dark street before dawn, backs to camera, faces not visible, the father holding the small girl's hand, other people in white clothes walking ahead in the same direction, street lights, deep blue sky",
+        "refs": [],
+        "seed": 1209,
+        "text_refs": [
+          "family"
+        ]
+      },
+      "motion": {
+        "mode": "wan",
+        "prompt": "the family walks slowly away from the camera down the street, camera fixed, gentle movement of clothes",
+        "seed": 2209
+      },
+      "narration": {
+        "text": "ገና ሳይነጋ ከቤት እንወጣለን። መንገዱ ወደ ስታዲየሙ በሚሄዱ ሰዎች ይሞላል።",
+        "subtitle_en": "Before dawn we leave the house.\nThe road fills with people going to the stadium."
+      }
+    },
+    {
+      "id": "s10",
+      "beat": "The stadium",
+      "reason": "The only large-scale image, used for the reflection that this is how Eid has always been for me.",
+      "shot_size": "extreme_wide",
+      "min_duration_s": 9,
+      "keyframe": {
+        "prompt": "high wide view of a large open stadium in Addis Ababa at blue hour before sunrise, thousands of people in white clothes gathered in long calm rows on the field, soft early light on the horizon, peaceful",
+        "refs": [],
+        "seed": 1210
+      },
+      "motion": {
+        "mode": "kenburns",
+        "kenburns": {
+          "zoom_from": 1.12,
+          "zoom_to": 1.0,
+          "pan": "right"
+        }
+      },
+      "narration": {
+        "text": "ይህ ልማድ መቼ እንደጀመረ አላውቅም። እኔ ግን ራሴን ካወቅሁ ጀምሮ፣ ዒድ ማለት ይህ ነው።",
+        "subtitle_en": "I don't know when this tradition began.\nBut for as long as I can remember, this is Eid."
+      }
+    },
+    {
+      "id": "s11",
+      "beat": "The memory: the bowl again",
+      "reason": "Ends on the bowl, not the stadium, because the film is about what that one bowl means to me; the motif returns empty, in morning light.",
+      "shot_size": "close_up",
+      "min_duration_s": 8,
+      "keyframe": {
+        "prompt": "the bowl resting alone on the woven floor mat in the quiet living room, scraped nearly clean with only traces of genfo and red butter left, soft pale early morning daylight from the window, cushions around it, a small child's sandal left beside it, no people",
+        "refs": [
+          "bowl",
+          "home"
+        ],
+        "seed": 1211
+      },
+      "motion": {
+        "mode": "kenburns",
+        "kenburns": {
+          "zoom_from": 1.0,
+          "zoom_to": 1.08,
+          "pan": "none"
+        }
+      },
+      "narration": {
+        "text": "ብዙ ነገር ልረሳ እችላለሁ። ያንን አንድ ሳህን ግን አልረሳውም። ዒድ ሙባረክ።",
+        "subtitle_en": "I may forget many things, but never\nthat one bowl. Eid Mubarak."
+      },
+      "title_overlay": "በአንድ ሳህን ዙሪያ — Around One Bowl"
+    }
+  ],
+  "music": {
+    "model": "ACE-Step 1.5",
+    "caption": "nostalgic intimate instrumental film score, Ethiopian-inspired pentatonic melody in the feel of tizita, solo krar plucks and a soft masinko line, warm felt piano, gentle string pad, sparse and slow, no drums, warm analog texture, peaceful and wistful",
+    "instrumental": true,
+    "bpm": 70,
+    "key": "D Minor",
+    "duration_s": 90,
+    "candidates": 3,
+    "seeds": [
+      3001,
+      3002,
+      3003
+    ],
+    "chosen": 0,
+    "cues": [
+      {
+        "at_shot": "s01",
+        "intent": "single sparse krar notes in the dark"
+      },
+      {
+        "at_shot": "s05",
+        "intent": "warm pad enters as the bowl arrives"
+      },
+      {
+        "at_shot": "s06",
+        "intent": "gentle swell: the family together"
+      },
+      {
+        "at_shot": "s08",
+        "intent": "drops almost to silence for the dua"
+      },
+      {
+        "at_shot": "s10",
+        "intent": "the main theme returns, a little fuller"
+      },
+      {
+        "at_shot": "s11",
+        "intent": "resolves softly and fades"
+      }
+    ],
+    "duck": {
+      "threshold": 0.02,
+      "ratio": 6,
+      "attack_ms": 300,
+      "release_ms": 1500
+    }
+  },
+  "end_card": {
+    "text_am": "ይህ ፊልም በሰው ሰራሽ አስተውሎት (AI) የተሰራ ነው።\nገፀ-ባህሪያቱ ልብ ወለድ ናቸው።",
+    "text_en": "Made with AI. All characters are fictional.\nBased on my family's Eid al-Fitr tradition.",
+    "duration_s": 3
+  }
+}

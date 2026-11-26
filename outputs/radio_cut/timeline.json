@@ -1,0 +1,82 @@
+{
+  "total_s": 84.59,
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0.0,
+      "duration": 7.76,
+      "narration": "outputs\\narration\\s01.wav",
+      "subtitle": "Ramadan is over. It is five in the morning,\nand outside it is still dark."
+    },
+    {
+      "id": "s02",
+      "start": 7.76,
+      "duration": 7,
+      "narration": "outputs\\narration\\s02.wav",
+      "subtitle": "We gently wake one another.\nNo one is left behind."
+    },
+    {
+      "id": "s03",
+      "start": 14.76,
+      "duration": 6,
+      "narration": "outputs\\narration\\s03.wav",
+      "subtitle": "The children are already awake,\nrunning through the house with joy."
+    },
+    {
+      "id": "s04",
+      "start": 20.76,
+      "duration": 7.67,
+      "narration": "outputs\\narration\\s04.wav",
+      "subtitle": "One washes, another tidies the house.\nWe wait until everyone is ready."
+    },
+    {
+      "id": "s05",
+      "start": 28.43,
+      "duration": 7.07,
+      "narration": "outputs\\narration\\s05.wav",
+      "subtitle": "Then the genfo comes, in one big bowl,\nbutter and berbere in the middle."
+    },
+    {
+      "id": "s06",
+      "start": 35.5,
+      "duration": 6.5,
+      "narration": "outputs\\narration\\s06.wav",
+      "subtitle": "We all sit on the floor around the bowl."
+    },
+    {
+      "id": "s07",
+      "start": 42.0,
+      "duration": 7.36,
+      "narration": "outputs\\narration\\s07.wav",
+      "subtitle": "Young and old reach into the same bowl,\nbut everyone races for the butter in the middle."
+    },
+    {
+      "id": "s08",
+      "start": 49.36,
+      "duration": 7,
+      "narration": "outputs\\narration\\s08.wav",
+      "subtitle": "After we eat, we make dua together, quietly."
+    },
+    {
+      "id": "s09",
+      "start": 56.36,
+      "duration": 8,
+      "narration": "outputs\\narration\\s09.wav",
+      "subtitle": "Before dawn we leave the house.\nThe road fills with people going to the stadium."
+    },
+    {
+      "id": "s10",
+      "start": 64.36,
+      "duration": 9,
+      "narration": "outputs\\narration\\s10.wav",
+      "subtitle": "I don't know when this tradition began.\nBut for as long as I can remember, this is Eid."
+    },
+    {
+      "id": "s11",
+      "start": 73.36,
+      "duration": 8.23,
+      "narration": "outputs\\narration\\s11.wav",
+      "subtitle": "I may forget many things, but never\nthat one bowl. Eid Mubarak."
+    }
+  ]
+}
